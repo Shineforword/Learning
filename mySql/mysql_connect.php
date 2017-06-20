@@ -9,13 +9,15 @@ if(! $conn )
 {
     die('连接失败: ' . mysqli_error($conn));
 }
-echo '连接成功';
+echo '连接成功'."<br/>";
 mysqli_select_db($conn,"Learn");
 mysqli_query($conn , "set names utf8");
+
 $sql="select * from user_01";
 $res=mysqli_query($conn,$sql);
+
 $str="<table><tr>
-  <td>追逐生命的终极意义 Who am  I ?</td>
+  <td>user_01</td>
 </tr>";
 $strs="";
 while($row = mysqli_fetch_array($res))
@@ -23,6 +25,8 @@ while($row = mysqli_fetch_array($res))
   $strs.="<tr>
     <td>".$row['user_name']."</td>
     <td>".$row['user_birthday']."</td>
+    <td>".$row['user_sex']."</td>
+    <td>".$row['user_age']."</td>
   </tr>";
 }
 echo $str.$strs."</table>";
