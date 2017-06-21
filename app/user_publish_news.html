@@ -26,14 +26,14 @@
                 <td >内容：</td>  
                 <td><textarea cols="auto" rows="auto" style="width:400px; height:400px" name="content"></textarea></td>  
             </tr>  
-      
-    </table><br />  
+            </table>
+            <br/>  
     <?php  
     $time = date('y-m-d h:i:s');  
-    echo "<input type=\"hidden\" name=\"time\" value=\"{$time}\"/>";  
+    echo $time;
     ?>  
+        <input type=\"hidden\" name=\"time\" value=\"{$time}\"/> 
         <input type="submit" value="提交" formaction="user_pushlish_news.php"/>  
-      
         <input type="submit" value="查看" formaction="user_publish_scan.php"/>  
     </form> 
 

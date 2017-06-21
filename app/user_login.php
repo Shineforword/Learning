@@ -37,7 +37,7 @@
     }  
     else  {  
         echo"您输入的用户名或密码不正确，请重新输入！！";  
-        sleep(3);
-        header("Location:LoginTest.html"); 
+        sleep(1);
+        header("Location:index.html"); 
     }  
 ?>
