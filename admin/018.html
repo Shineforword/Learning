@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 	 
+	<title>表单验证</title>
+</head>
+<body>
+		<form method="post" action="018_phpsubmit.php">
+		Name :<input type="text" name="name">
+		<span class="error">*<?php echo $nameErr ; ?></span>
+		<br>
+		Email :<input type="text" name="email"><br>
+		WebSite :<input type="text" name="website"><br>
+		Comment :<input type="text" name="comment"><br>
+		Gender: 
+		<input type="radio" name="gender" value="female"> 女
+		<input type="radio" name="gender" value="male"> 男 <br>
+		<input type="submit"> 
+	
+		</form>
+</body>
+</html>
